@@ -1,7 +1,5 @@
-const showResult = (resultEl, distance, fromUnit, toUnit, result) => {
-  resultEl.textContent = `At ${distance} ${fromUnit} ${result.toFixed(
-    2
-  )} ${toUnit}`;
+const showResult = (resultEl, distance, value, fromUnit, unit) => {
+  resultEl.textContent = `At ${distance} ${fromUnit} ${value} ${unit}`;
 };
 
 export default showResult;

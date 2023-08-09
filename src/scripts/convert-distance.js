@@ -1,14 +1,14 @@
 import rules from './rules.json';
 
-let rule;
+let result;
 
-const convert = (distance, fromUnit, toUnit) => {
-  if (rules[fromUnit][toUnit] === undefined) {
+const convert = async ({ distance, convertTo }) => {
+  const { unit, value } = distance;
+  if (rules[unit][convertTo] === undefined) {
     alert('Select the unit of measure to convert');
   } else {
-    rule = rules[fromUnit][toUnit];
-    const result = distance * rule;
-    return result;
+    result = (rules[unit][convertTo] * value).toFixed(2);
+    return { unit: convertTo, value: result };
   }
 };
 

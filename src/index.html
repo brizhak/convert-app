@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <header></header>
     <main>
       <div class="container">
         <form id="conversion-form">
@@ -24,33 +23,17 @@
           </label>
           <label
             >Unit:
-            <select id="fromUnit">
-              <option value="km">km</option>
-              <option value="m">m</option>
-              <option value="cm">cm</option>
-              <option value="mm">mm</option>
-              <option value="in">in</option>
-              <option value="ft">ft</option>
-              <option value="yd">yd</option>
-            </select>
+            <select id="fromUnit"></select>
           </label>
           <label
             >Convert to:
-            <select id="toUnit">
-              <option value="km">km</option>
-              <option value="m">m</option>
-              <option value="cm">cm</option>
-              <option value="mm">mm</option>
-              <option value="in">in</option>
-              <option value="ft">ft</option>
-              <option value="yd">yd</option>
-            </select>
+            <select id="toUnit"></select>
           </label>
           <button type="submit">Convert</button>
         </form>
         <p id="result"></p>
       </div>
     </main>
-    <script type="module" src="./scripts/handler-submit.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
