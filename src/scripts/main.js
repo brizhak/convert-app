@@ -12,6 +12,7 @@ const renderMarkup = () => {
     option.value = unit;
     option.textContent = unit;
     selects.forEach(select => select.add(option.cloneNode(true)));
+    console.log('render');
   }
 };
 
